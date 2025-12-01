@@ -20,7 +20,7 @@ let motd = "Le Jessy Shop est maintenant ouvert !"
 console.log("MOTD: " + motd);
 
 // - Afficher le slogan dans la console
-console.log(slogan)
+console.log(slogan);
 
 // - Selon la variable qui indique si la boutique est ouverte :
 //   - afficher dans la console un message “ouverte”
