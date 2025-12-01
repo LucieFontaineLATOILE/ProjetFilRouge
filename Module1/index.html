@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ma Boutique JS - Exercice 9</title>
+
+    <!-- Favicon JS -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.pixabay.com/photo/2024/01/31/04/37/javascript-8543231_1280.png"
+    />
+
+    <!-- Police (optionnelle) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Fond décoratif -->
+    <div class="bg-ornament"></div>
+    <div class="bg-ornament-soft"></div>
+
+    <!-- En-tête du site -->
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="brand">
+          <div class="brand-logo-wrapper">
+            <img
+              src="https://cdn.pixabay.com/photo/2024/01/31/04/37/javascript-8543231_1280.png"
+              alt="Logo JavaScript"
+              class="brand-logo"
+            />
+          </div>
+          <div class="brand-text">
+            <h1 class="site-title">Ma Boutique JS</h1>
+            <p class="site-tagline">
+              Des goodies pour développeurs passionnés
+            </p>
+          </div>
+        </div>
+
+        <div class="cart-summary">
+          <div class="cart-summary-line">
+            🛒 <span id="cart-count">0</span> article(s)
+          </div>
+          <div class="cart-summary-line">
+            Total : <span id="cart-total">0,00&nbsp;€</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="container main-layout">
+      <!-- Section produits -->
+      <section class="products-section">
+        <div class="section-header">
+          <h2>Nos produits</h2>
+          <p class="section-intro">
+            Ajoute des produits au panier pour voir le total se mettre à jour.
+          </p>
+        </div>
+
+        <div id="product-list" class="product-list">
+          <!-- Cartes produits générées en JS -->
+        </div>
+      </section>
+
+      <!-- Panier -->
+      <aside class="cart-section">
+        <h2>Votre panier</h2>
+        <p id="cart-message" class="cart-message">
+          Votre panier est vide.
+        </p>
+        <ul class="cart-details">
+          <li>
+            Nombre d’articles :
+            <span id="cart-count-aside">0</span>
+          </li>
+          <li>
+            Total :
+            <span id="cart-total-aside">0,00&nbsp;€</span>
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="year"></span> Ma Boutique JS — Projet fil rouge.
+      </p>
+    </footer>
+
+    <!-- Script de l'exercice 9 -->
+    <script src="script.js"></script>
+  </body>
+</html>
