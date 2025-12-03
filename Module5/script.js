@@ -71,21 +71,6 @@ let featuredProductImage = "https://i.etsystatic.com/60486309/r/il/9bffba/728963
 let productList = document.getElementById("product-list");
 
 // - Définir une fonction (createFeaturedProductCard()) qui :
-//     • crée un conteneur pour la carte  
-//       (indice : il existe une méthode du DOM pour créer un élément HTML)
-//     • crée une image :
-//         - lui donner la source de l'image
-//       (indice : pensez aux propriétés des balises <img>)
-//     • crée un titre et lui mettre le nom du produit  
-//       (indice : une propriété permet d’écrire du texte dans un élément)
-//     • calcule le prix TTC en utilisant la fonction vue dans l’exercice précédent
-//       (indice : vous avez déjà une fonction qui fait un calcul à partir du prix HT)
-//     • formate ce prix TTC avec la fonction prévue pour ça
-//     • crée un paragraphe pour afficher le prix TTC
-//     • crée un autre paragraphe pour la description
-//     • assemble tous les éléments dans le conteneur
-//       (indice : pensez à une méthode qui ajoute un enfant dans un élément)
-//     • retourne ce conteneur
 function createFeaturedProductCard() {
     //     • crée un conteneur pour la carte  
     let cardContainer = document.createElement("article");
@@ -94,11 +79,13 @@ function createFeaturedProductCard() {
     //     • crée une image :
     //         - lui donner la source de l'image
     let cardImage = document.createElement("img");
+    cardImage.classList.add("product-image");
     cardImage.setAttribute("src", featuredProductImage);
 
     //     • crée un titre et lui mettre le nom du produit  
     //       (indice : une propriété permet d’écrire du texte dans un élément)
     let cardTitle = document.createElement("h3");
+    cardTitle.classList.add("product-name");
     cardTitle.textContent = featuredProductName;
 
     //     • calcule le prix TTC en utilisant la fonction vue dans l’exercice précédent
@@ -110,10 +97,12 @@ function createFeaturedProductCard() {
 
     //     • crée un paragraphe pour afficher le prix TTC
     let cardPrice = document.createElement("p");
+    cardPrice.classList.add("product-price");
     cardPrice.textContent = formattedPrice;
 
     //     • crée un autre paragraphe pour la description
     let cardDescription = document.createElement("p");
+    cardDescription.classList.add("product-desc");
     cardDescription.textContent = featuredProductDescription;
 
     //     • assemble tous les éléments dans le conteneur
