@@ -1,6 +1,6 @@
 list = document.getElementById("product-list");
 
-for (let i = 1; i <= 6; i++) {
+for (let i = 1; i <= 9; i++) {
     let holder = document.createElement("article");
     holder.classList.add("product-card");
 
